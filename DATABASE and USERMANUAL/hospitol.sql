@@ -160,9 +160,9 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`pet_id`, `pet_reg_date`, `pet_fn`, `pet_sn`, `pet_addr`, `pet_ac`, `pet_con`, `pet_em`, `pet_gen`, `pet_bd`, `pet_age`, `pet_bg`, `Pet_opdid`, `Insert_admunname`, `Update_sadmunname`, `update_date`) VALUES
-(2, '2022-06-28 21:53:33', 'safe', 'bgr', 'kairouan', '+94', 123456789, 'atef@gmail.com', 'Female', '2000-05-20', 22, 'B+', 1, 'superadmin', 'superadmin', '2022-06-29 02:25:45'),
-(3, '2022-06-29 17:05:11', 'Narjes', 'BOUGUERRA', 'sfax', '+94', 267900140, 'bouguerra.narjes99@gmail.com', 'Female', '1998-01-30', 24, 'B+', 4, 'superadmin', NULL, NULL),
-(4, '2022-06-29 18:34:50', 'abir', 'sebri', 'habas', '+94', 222856934, 'sebri@gmail.com', 'Male', '2022-06-14', 0, 'B-', 4, 'safe', NULL, NULL),
+(2, '2022-06-28 21:53:33', 'safe', 'safe', 'kairouan', '+94', 123456789, 'safe@gmail.com', 'Female', '2000-05-20', 22, 'B+', 1, 'superadmin', 'superadmin', '2022-06-29 02:25:45'),
+(3, '2022-06-29 17:05:11', 'jous', 'jous', 'sfax', '+94', 123456789, 'jous@gmail.com', 'Female', '1998-01-30', 24, 'B+', 4, 'superadmin', NULL, NULL),
+(4, '2022-06-29 18:34:50', 'abir', 'abir', 'tunis', '+94', 222856934, 'sebri@gmail.com', 'Male', '2022-06-14', 0, 'B-', 4, 'safe', NULL, NULL),
 (5, '2022-06-29 18:48:17', 'nour', 'nour', 'kairouan', '+94', 123456789, 'nour99@gmail.com', 'Female', '1987-02-12', 35, 'AB+', 4, 'safe', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -188,12 +188,12 @@ CREATE TABLE `pet_invo` (
 --
 
 INSERT INTO `pet_invo` (`invo_id`, `invo_Pet_name`, `invo_pet_id`, `invo_pet_age`, `invo_date`, `medi_charge`, `doc_charge`, `hos_charge`, `total_charge`) VALUES
-(1, 'fouazi bgr', 0, 56, '2022-06-28', 1, 1, 500, 502),
-(2, 'Narjes BOUGUERRA', 1, 24, '2022-06-29', 1, 1, 500, 502),
-(3, 'atef bgr', 0, 27, '2022-06-29', 1, 1, 500, 502),
+(1, 'fouazi ', 0, 56, '2022-06-28', 1, 1, 500, 502),
+(2, 'jous, 1, 24, '2022-06-29', 1, 1, 500, 502),
+(3, 'atef ', 0, 27, '2022-06-29', 1, 1, 500, 502),
 (4, 'Narjes BOUGUERRA', 3, 24, '2022-06-29', 1, 1, 500, 502),
-(5, 'atef bgr', 0, 24, '2022-06-29', 1, 1, 500, 502),
-(6, 'atef bgr', 0, 24, '2022-06-29', 1, 1, 500, 502),
+(5, 'atef ', 0, 24, '2022-06-29', 1, 1, 500, 502),
+(6, 'atef ', 0, 24, '2022-06-29', 1, 1, 500, 502),
 (7, 'Narjes BOUGUERRA', 3, 24, '2022-06-29', 1, 1, 500, 502),
 (8, 'nour nour', 5, 35, '2022-06-29', 1, 1, 500, 502);
 
@@ -226,8 +226,8 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`staffID`, `smfname`, `smlname`, `smtype`, `smbd`, `telcode`, `smtel`, `smemail`, `smgender`, `smwoti`, `smaddr`, `instetd_by`, `insterted_date`, `update_by`, `update_date`) VALUES
-(1, 'atef', 'bgr', 'Doctor', '1987-02-26', '+94', '123456789', 'doctor@gmail.com', 'Male', 'Full', 'sfax', 'superadmin', '2022-06-28 17:28:03', 'superadmin', '2022-06-29 00:40:39'),
-(2, 'azer', 'raguem', 'Nurse', '1999-03-12', '+94', '852741963', 'azer@gmail.com', 'Male', 'Morning', 'sousse', 'superadmin', '2022-06-28 20:02:25', 'superadmin', '2022-06-29 00:40:04'),
+(1, 'atef', 'atef', 'Doctor', '1987-02-26', '+94', '123456789', 'doctor@gmail.com', 'Male', 'Full', 'sfax', 'superadmin', '2022-06-28 17:28:03', 'superadmin', '2022-06-29 00:40:39'),
+(2, 'azer', 'azer', 'Nurse', '1999-03-12', '+94', '852741963', 'azer@gmail.com', 'Male', 'Morning', 'sousse', 'superadmin', '2022-06-28 20:02:25', 'superadmin', '2022-06-29 00:40:04'),
 (3, 'houssem', 'rhif', 'Doctor', '1988-02-21', '+94', '123456789', 'houssem@gmail.com', 'Male', 'Full', 'sousse', 'superadmin', '2022-06-29 16:02:21', NULL, '2022-06-29 16:02:21'),
 (4, 'mohamed', 'abelmasoud', 'Doctor', '1965-03-01', '+94', '203698521', 'mohamed@gmail.com', 'Male', 'Evening', 'sfax', 'superadmin', '2022-06-29 16:03:31', NULL, '2022-06-29 16:03:31');
 
